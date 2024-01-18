@@ -29,6 +29,6 @@ def show_solution(solution):
     print(resultat)
 
 
-valeurs = generate_schur_csp_instance(20, 4)
+valeurs = generate_schur_csp_instance(4, 3)
 if valeurs != "NO SOLUTION":
     show_solution(valeurs)
