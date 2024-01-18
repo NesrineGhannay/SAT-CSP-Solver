@@ -52,6 +52,24 @@ def formeInjective(clauses, n):
     [clausesSansDoubles.append(clause) for clause in nouvellesClauses if clause not in clausesSansDoubles]
     return clausesSansDoubles
 
+def inverseFormeInjective(clausesInjectives, n):
+    originalesClauses = []
+    for clause in clausesInjectives:
+        originaleClause = []
+        for litteral in clause:
+            if litteral < 0:
+                litteral = abs(litteral)
+                i = (litteral - 1) // n + 1
+                j = (litteral - 1) % n + 1
+                originaleClause.append((-i, j))
+            else:
+                i = (litteral - 1) // n + 1
+                j = (litteral - 1) % n + 1
+                originaleClause.append((i, j))
+        originalesClauses.append(originaleClause)
+    return originalesClauses
+
+
 
 def countNbLiterals(clauses):
     """
