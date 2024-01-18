@@ -11,8 +11,8 @@ def generate_schur_csp_instance(n, k):
     )
 
     if solve() is SAT:
-         return values(b)
-    else :
+        return values(b)
+    else:
         print("l'instance n'a pas de solution")
         return "NO SOLUTION"
 
@@ -29,9 +29,6 @@ def show_solution(solution):
     print(resultat)
 
 
-
 valeurs = generate_schur_csp_instance(20, 4)
 if valeurs != "NO SOLUTION":
     show_solution(valeurs)
-
-
