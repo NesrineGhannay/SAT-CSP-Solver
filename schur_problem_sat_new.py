@@ -9,20 +9,20 @@ def generate_schur_csp_instance(n, k):
             for l in range(j + 1, n + 1):
                 if (i + j == l):
                     for m in range(1, k + 1):
-                        clauses += formeInjective(-i, -m) + " ", formeInjective(-j, -m) + " " + formeInjective(-l, -m) + " 0 \n"
+                        clauses += str(formeInjective(-i, -m, k)) + " ", str(formeInjective(-j, -m, k)) + " " + str(formeInjective(-l, -m, k)) + " 0 \n"
 
     # Chaque balle est sur au moins dans une case
     for i in range(1, n + 1):
         clause = ""
         for j in range(1, k + 1):
-            clause += formeInjective(i, j) + " "
+            clause += formeInjective(i, j, k) + " "
         clauses += clause + "0 \n"
 
     # Chaque balle est sur au plus dans une case
     for i in range(1, n + 1):
         for j in range(1, k + 1):
             for l in range(j + 1, k + 1):
-                clauses += formeInjective(-i, -j) + " " + formeInjective(-i, -l) + " 0 \n"
+                clauses += formeInjective(-i, -j, k) + " " + formeInjective(-i, -l, k) + " 0 \n"
     return clauses
 
 
@@ -35,3 +35,12 @@ def formeInjective(i, j, nbBoxes):
         return (nbBoxes * (i - 1) + j)  # (i, j) --> k*i-1 +j
 
 
+def genererFichierClauses(n, k, fileName):
+    clauses = generate_schur_csp_instance(n, k)
+    nombreLitteraux = n * k
+    fichier = open(fileName, "w")
+    fichier.write("cnf " + str(nombreLitteraux) + " " + str(len(clauses)) + "\n")
+    fichier.write(clauses)
+    fichier.close()
+
+genererFichierClauses(4, 3, "test.cnf")
