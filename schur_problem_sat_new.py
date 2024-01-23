@@ -62,7 +62,7 @@ def genererFichierClauses(n, k, fileName):
     fichier.write(clauses)
     fichier.close()
 
-#genererFichierClauses(4, 3, "test2.cnf")
+#genererFichierClauses(4, 3, "4_3.cnf")
 
 
 def show_solution(solutionFileName, k):
@@ -74,8 +74,18 @@ def show_solution(solutionFileName, k):
 
         boites = defaultdict(list)
 
+        """for balle, boite in litteraux:
+            if boite > 0 :
+                boites[boite].append(balle)
+
+        for i in range(1, k + 1):
+            print("Boîte {}: {}".format(i, boites[i]))
+            """
+        boites = {i: [] for i in range(1, k + 1)}
+
         for balle, boite in litteraux:
-            boites[boite].append(balle)
+            if boite > 0:
+                boites[boite].append(balle)
 
         for i in range(1, k + 1):
             print("Boîte {}: {}".format(i, boites[i]))
@@ -84,4 +94,4 @@ def show_solution(solutionFileName, k):
         print("La formule n'est pas satisfaisable.")
 
 
-#show_solution("4balles_3boites.out", 3)
+show_solution("solutions/4_3.out", 3)
