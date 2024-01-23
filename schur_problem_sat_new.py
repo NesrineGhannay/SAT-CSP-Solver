@@ -3,7 +3,7 @@ import os
 
 
 
-def generate_schur_csp_instance(n, k):
+def generate_schur_csp_instance(k, n):
     clauses = ""
 
     # si on a trois balles x, y, z telles que x + y = z, alors les trois balles ne doivent pas toutes être dans la
@@ -43,26 +43,31 @@ def formeInjective(i, j, nbBoxes):
 def formeInjective_inverse(x, nbBoxes):
     if x < 0:
         x = abs(x)
-        j = x % nbBoxes
-        i = x - j // nbBoxes
+        j = (x % nbBoxes)
+        i = ((x - j) // nbBoxes) + 1
         return -i, -j
     else:
-        j = x % nbBoxes
-        i = (x - j) // nbBoxes
+        j = (x % nbBoxes)
+        i = ((x - j) // nbBoxes) + 1
         return i, j
 
 #print(formeInjective(-456, -10, 15))
 #print(formeInjective_inverse(-6835, 15))
+"""
+print(formeInjective_inverse(2, 3))
+print(formeInjective_inverse(4, 3))
+print(formeInjective_inverse(7, 3))
+print(formeInjective_inverse(10, 3))"""
 
-def genererFichierClauses(n, k, fileName):
-    clauses = generate_schur_csp_instance(n, k)
+def genererFichierClauses(k, n, fileName):
+    clauses = generate_schur_csp_instance(k, n)
     nombreLitteraux = n * k
     fichier = open(fileName, "w")
     fichier.write("p cnf " + str(nombreLitteraux) + " " + str(len(clauses.splitlines())) + "\n")
     fichier.write(clauses)
     fichier.close()
 
-#genererFichierClauses(4, 3, "4_3.cnf")
+#genererFichierClauses(3, 20, "instances/3_20.cnf")
 
 
 def show_solution(solutionFileName, k):
@@ -94,4 +99,4 @@ def show_solution(solutionFileName, k):
         print("La formule n'est pas satisfaisable.")
 
 
-show_solution("solutions/4_3.out", 3)
+#show_solution("solutions/3_20.out", 3)
