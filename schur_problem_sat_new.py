@@ -48,7 +48,6 @@ def formeInjective_inverse(x, nbBoxes):
     else:
         i = ((x - 1) // nbBoxes) + 1
         j = ((x - 1) % nbBoxes) + 1
-        #print("x : ", x, " et i, j : ", i, " , ", j)
         return i, j
 
 
@@ -66,29 +65,19 @@ def show_solution(solutionFileName, k):
         lines = f.readlines()
     if lines[0].strip() == "SAT":
         literals = [int(val) for val in lines[1].split()[:-1]]
-        #print(" x : ", literals)
         litteraux = [formeInjective_inverse(valuation, k) for valuation in literals if valuation > 0]
-        #print("i , j : ", litteraux)
 
         boites = {i: [] for i in range(1, k + 1)}
-        c = 0
         for balle, boite in litteraux:
-            # print(litteraux)
             if boite > 0:
                 boites[boite].append(balle)
-                c += 1
 
         for i in range(1, k + 1):
             print("Boîte {}: {}".format(i, boites[i]))
-        #print("Nombre d'affectations : " + str(c))
 
     else:
         print("La formule n'est pas satisfaisable.")
 
 
-genererFichierClauses(5, 140, "instances/5_140.cnf")
-genererFichierClauses(5, 150, "instances/5_150.cnf")
-genererFichierClauses(5, 160, "instances/5_160.cnf")
-genererFichierClauses(5, 170, "instances/5_170.cnf")
-genererFichierClauses(5, 171, "instances/5_171.cnf")
+#genererFichierClauses(5, 140, "instances/5_140.cnf")
 #show_solution("solutions/3_20.out", 3)
