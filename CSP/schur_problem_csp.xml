@@ -1,0 +1,220 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="b" size="[20]"> 1..3 </array>
+  </variables>
+  <constraints>
+    <group>
+      <intension> or(ne(%0,%1),ne(%0,%2),ne(%1,%2)) </intension>
+      <args> b[0] b[0] b[0] </args>
+      <args> b[0..1] b[1] </args>
+      <args> b[0] b[2] b[2] </args>
+      <args> b[0] b[3] b[3] </args>
+      <args> b[0] b[4] b[4] </args>
+      <args> b[0] b[5] b[5] </args>
+      <args> b[0] b[6] b[6] </args>
+      <args> b[0] b[7] b[7] </args>
+      <args> b[0] b[8] b[8] </args>
+      <args> b[0] b[9] b[9] </args>
+      <args> b[0] b[10] b[10] </args>
+      <args> b[0] b[11] b[11] </args>
+      <args> b[0] b[12] b[12] </args>
+      <args> b[0] b[13] b[13] </args>
+      <args> b[0] b[14] b[14] </args>
+      <args> b[0] b[15] b[15] </args>
+      <args> b[0] b[16] b[16] </args>
+      <args> b[0] b[17] b[17] </args>
+      <args> b[0] b[18] b[18] </args>
+      <args> b[0] b[19] b[19] </args>
+      <args> b[1] b[0..1] </args>
+      <args> b[1] b[1..2] </args>
+      <args> b[1..3] </args>
+      <args> b[1] b[3..4] </args>
+      <args> b[1] b[4..5] </args>
+      <args> b[1] b[5..6] </args>
+      <args> b[1] b[6..7] </args>
+      <args> b[1] b[7..8] </args>
+      <args> b[1] b[8..9] </args>
+      <args> b[1] b[9..10] </args>
+      <args> b[1] b[10..11] </args>
+      <args> b[1] b[11..12] </args>
+      <args> b[1] b[12..13] </args>
+      <args> b[1] b[13..14] </args>
+      <args> b[1] b[14..15] </args>
+      <args> b[1] b[15..16] </args>
+      <args> b[1] b[16..17] </args>
+      <args> b[1] b[17..18] </args>
+      <args> b[1] b[18..19] </args>
+      <args> b[2] b[0] b[2] </args>
+      <args> b[2] b[1] b[3] </args>
+      <args> b[2] b[2] b[4] </args>
+      <args> b[2..3] b[5] </args>
+      <args> b[2] b[4] b[6] </args>
+      <args> b[2] b[5] b[7] </args>
+      <args> b[2] b[6] b[8] </args>
+      <args> b[2] b[7] b[9] </args>
+      <args> b[2] b[8] b[10] </args>
+      <args> b[2] b[9] b[11] </args>
+      <args> b[2] b[10] b[12] </args>
+      <args> b[2] b[11] b[13] </args>
+      <args> b[2] b[12] b[14] </args>
+      <args> b[2] b[13] b[15] </args>
+      <args> b[2] b[14] b[16] </args>
+      <args> b[2] b[15] b[17] </args>
+      <args> b[2] b[16] b[18] </args>
+      <args> b[2] b[17] b[19] </args>
+      <args> b[3] b[0] b[3] </args>
+      <args> b[3] b[1] b[4] </args>
+      <args> b[3] b[2] b[5] </args>
+      <args> b[3] b[3] b[6] </args>
+      <args> b[3..4] b[7] </args>
+      <args> b[3] b[5] b[8] </args>
+      <args> b[3] b[6] b[9] </args>
+      <args> b[3] b[7] b[10] </args>
+      <args> b[3] b[8] b[11] </args>
+      <args> b[3] b[9] b[12] </args>
+      <args> b[3] b[10] b[13] </args>
+      <args> b[3] b[11] b[14] </args>
+      <args> b[3] b[12] b[15] </args>
+      <args> b[3] b[13] b[16] </args>
+      <args> b[3] b[14] b[17] </args>
+      <args> b[3] b[15] b[18] </args>
+      <args> b[3] b[16] b[19] </args>
+      <args> b[4] b[0] b[4] </args>
+      <args> b[4] b[1] b[5] </args>
+      <args> b[4] b[2] b[6] </args>
+      <args> b[4] b[3] b[7] </args>
+      <args> b[4] b[4] b[8] </args>
+      <args> b[4..5] b[9] </args>
+      <args> b[4] b[6] b[10] </args>
+      <args> b[4] b[7] b[11] </args>
+      <args> b[4] b[8] b[12] </args>
+      <args> b[4] b[9] b[13] </args>
+      <args> b[4] b[10] b[14] </args>
+      <args> b[4] b[11] b[15] </args>
+      <args> b[4] b[12] b[16] </args>
+      <args> b[4] b[13] b[17] </args>
+      <args> b[4] b[14] b[18] </args>
+      <args> b[4] b[15] b[19] </args>
+      <args> b[5] b[0] b[5] </args>
+      <args> b[5] b[1] b[6] </args>
+      <args> b[5] b[2] b[7] </args>
+      <args> b[5] b[3] b[8] </args>
+      <args> b[5] b[4] b[9] </args>
+      <args> b[5] b[5] b[10] </args>
+      <args> b[5..6] b[11] </args>
+      <args> b[5] b[7] b[12] </args>
+      <args> b[5] b[8] b[13] </args>
+      <args> b[5] b[9] b[14] </args>
+      <args> b[5] b[10] b[15] </args>
+      <args> b[5] b[11] b[16] </args>
+      <args> b[5] b[12] b[17] </args>
+      <args> b[5] b[13] b[18] </args>
+      <args> b[5] b[14] b[19] </args>
+      <args> b[6] b[0] b[6] </args>
+      <args> b[6] b[1] b[7] </args>
+      <args> b[6] b[2] b[8] </args>
+      <args> b[6] b[3] b[9] </args>
+      <args> b[6] b[4] b[10] </args>
+      <args> b[6] b[5] b[11] </args>
+      <args> b[6] b[6] b[12] </args>
+      <args> b[6..7] b[13] </args>
+      <args> b[6] b[8] b[14] </args>
+      <args> b[6] b[9] b[15] </args>
+      <args> b[6] b[10] b[16] </args>
+      <args> b[6] b[11] b[17] </args>
+      <args> b[6] b[12] b[18] </args>
+      <args> b[6] b[13] b[19] </args>
+      <args> b[7] b[0] b[7] </args>
+      <args> b[7] b[1] b[8] </args>
+      <args> b[7] b[2] b[9] </args>
+      <args> b[7] b[3] b[10] </args>
+      <args> b[7] b[4] b[11] </args>
+      <args> b[7] b[5] b[12] </args>
+      <args> b[7] b[6] b[13] </args>
+      <args> b[7] b[7] b[14] </args>
+      <args> b[7..8] b[15] </args>
+      <args> b[7] b[9] b[16] </args>
+      <args> b[7] b[10] b[17] </args>
+      <args> b[7] b[11] b[18] </args>
+      <args> b[7] b[12] b[19] </args>
+      <args> b[8] b[0] b[8] </args>
+      <args> b[8] b[1] b[9] </args>
+      <args> b[8] b[2] b[10] </args>
+      <args> b[8] b[3] b[11] </args>
+      <args> b[8] b[4] b[12] </args>
+      <args> b[8] b[5] b[13] </args>
+      <args> b[8] b[6] b[14] </args>
+      <args> b[8] b[7] b[15] </args>
+      <args> b[8] b[8] b[16] </args>
+      <args> b[8..9] b[17] </args>
+      <args> b[8] b[10] b[18] </args>
+      <args> b[8] b[11] b[19] </args>
+      <args> b[9] b[0] b[9] </args>
+      <args> b[9] b[1] b[10] </args>
+      <args> b[9] b[2] b[11] </args>
+      <args> b[9] b[3] b[12] </args>
+      <args> b[9] b[4] b[13] </args>
+      <args> b[9] b[5] b[14] </args>
+      <args> b[9] b[6] b[15] </args>
+      <args> b[9] b[7] b[16] </args>
+      <args> b[9] b[8] b[17] </args>
+      <args> b[9] b[9] b[18] </args>
+      <args> b[9..10] b[19] </args>
+      <args> b[10] b[0] b[10] </args>
+      <args> b[10] b[1] b[11] </args>
+      <args> b[10] b[2] b[12] </args>
+      <args> b[10] b[3] b[13] </args>
+      <args> b[10] b[4] b[14] </args>
+      <args> b[10] b[5] b[15] </args>
+      <args> b[10] b[6] b[16] </args>
+      <args> b[10] b[7] b[17] </args>
+      <args> b[10] b[8] b[18] </args>
+      <args> b[10] b[9] b[19] </args>
+      <args> b[11] b[0] b[11] </args>
+      <args> b[11] b[1] b[12] </args>
+      <args> b[11] b[2] b[13] </args>
+      <args> b[11] b[3] b[14] </args>
+      <args> b[11] b[4] b[15] </args>
+      <args> b[11] b[5] b[16] </args>
+      <args> b[11] b[6] b[17] </args>
+      <args> b[11] b[7] b[18] </args>
+      <args> b[11] b[8] b[19] </args>
+      <args> b[12] b[0] b[12] </args>
+      <args> b[12] b[1] b[13] </args>
+      <args> b[12] b[2] b[14] </args>
+      <args> b[12] b[3] b[15] </args>
+      <args> b[12] b[4] b[16] </args>
+      <args> b[12] b[5] b[17] </args>
+      <args> b[12] b[6] b[18] </args>
+      <args> b[12] b[7] b[19] </args>
+      <args> b[13] b[0] b[13] </args>
+      <args> b[13] b[1] b[14] </args>
+      <args> b[13] b[2] b[15] </args>
+      <args> b[13] b[3] b[16] </args>
+      <args> b[13] b[4] b[17] </args>
+      <args> b[13] b[5] b[18] </args>
+      <args> b[13] b[6] b[19] </args>
+      <args> b[14] b[0] b[14] </args>
+      <args> b[14] b[1] b[15] </args>
+      <args> b[14] b[2] b[16] </args>
+      <args> b[14] b[3] b[17] </args>
+      <args> b[14] b[4] b[18] </args>
+      <args> b[14] b[5] b[19] </args>
+      <args> b[15] b[0] b[15] </args>
+      <args> b[15] b[1] b[16] </args>
+      <args> b[15] b[2] b[17] </args>
+      <args> b[15] b[3] b[18] </args>
+      <args> b[15] b[4] b[19] </args>
+      <args> b[16] b[0] b[16] </args>
+      <args> b[16] b[1] b[17] </args>
+      <args> b[16] b[2] b[18] </args>
+      <args> b[16] b[3] b[19] </args>
+      <args> b[17] b[0] b[17] </args>
+      <args> b[17] b[1] b[18] </args>
+      <args> b[17] b[2] b[19] </args>
+      <args> b[18] b[0] b[18] </args>
+      <args> b[18] b[1] b[19] </args>
+      <args> b[19] b[0] b[19] </args>
+    </group>
+  </constraints>
+</instance>

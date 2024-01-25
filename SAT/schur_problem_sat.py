@@ -79,5 +79,5 @@ def show_solution(solutionFileName, k):
         print("La formule n'est pas satisfaisable.")
 
 
-#genererFichierClauses(5, 140, "instances/5_140.cnf")
-#show_solution("solutions/3_20.out", 3)
+genererFichierClauses(3, 100, "3_100.cnf")
+#show_solution("solutions/4_66.out", 4)
