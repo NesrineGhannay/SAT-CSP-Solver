@@ -1,0 +1,254 @@
+
+[93mACE v2.1 [0m
+
+  [94minstance[0m
+    name:schur_problem_csp
+
+  Loading variables...
+
+  Loading constraints...
+
+  [94mdomains[0m
+    types:1  values:264  sizes:[4:66]
+  [94mvariables[0m
+    count:66  arrays:1  degrees:[32:1,33:2,34:2,35:2...61:2,62:2,63:2,64:1]
+  [94mconstraints[0m
+    count:1056  groups:1  arities:[3:1056]
+    distribution:[ConstraintIntension:1056]
+    intStructures:(1,shared:1055)
+    wck:0.56  cpu:1.104  mem:35M309
+
+  Building solver... 
+
+  [94msolver[0m
+    guaranteedAC:true
+    wck:0.59  cpu:1.127  mem:37M932
+
+  [94mpreprocessing[0m
+    revisions:(3168,useless=3168)  values:264  unsat:false
+    wck:0.009  cpu:1.136  mem:38M158
+
+    run0  dpts:20..26  effs:389  fails:10  wrgs:14  wck:0.00  ngds:5
+    run1  dpts:23..27  effs:829  fails:21  wrgs:33  wck:0.03  ngds:7
+    run2  dpts:21..28  effs:1170  fails:33  wrgs:54  wck:0.04  ngds:9
+    run3  dpts:17..23  effs:1598  fails:46  wrgs:77  wck:0.06  ngds:11
+    run4  dpts:17..23  effs:2202  fails:60  wrgs:105  wck:0.07  ngds:14
+    run5  dpts:14..19  effs:2888  fails:76  wrgs:134  wck:0.09  ngds:16
+    run6  dpts:15..22  effs:3518  fails:93  wrgs:166  wck:0.10  ngds:18
+    run7  dpts:17..23  effs:4254  fails:112  wrgs:194  wck:0.11  ngds:22
+    run8  dpts:13..19  effs:5114  fails:133  wrgs:233  wck:0.12  ngds:24
+    run9  dpts:15..22  effs:5696  fails:156  wrgs:279  wck:0.14  ngds:25
+    run10  dpts:14..21  effs:7106  fails:181  wrgs:326  wck:0.15  ngds:27
+    run11  dpts:16..22  effs:8447  fails:209  wrgs:378  wck:0.17  ngds:31
+    run12  dpts:12..19  effs:9593  fails:240  wrgs:438  wck:0.18  ngds:33
+    run13  dpts:14..23  effs:10851  fails:274  wrgs:495  wck:0.20  ngds:36
+    run14  dpts:14..22  effs:12740  fails:311  wrgs:562  wck:0.21  ngds:40
+    run15  dpts:10..19  effs:14863  fails:352  wrgs:635  wck:0.23  ngds:43
+    run16  dpts:17..24  effs:16720  fails:397  wrgs:721  wck:0.26  ngds:50
+    run17  dpts:12..19  effs:18843  fails:447  wrgs:803  wck:0.28  ngds:57
+    run18  dpts:16..24  effs:21063  fails:502  wrgs:904  wck:0.30  ngds:64
+    run19  dpts:11..22  effs:23074  fails:563  wrgs:1017  wck:0.32  ngds:67
+    run20  dpts:11..21  effs:26425  fails:630  wrgs:1143  wck:0.34  ngds:72
+    run21  dpts:15..22  effs:29146  fails:704  wrgs:1267  wck:0.38  ngds:77
+    run22  dpts:14..25  effs:33150  fails:785  wrgs:1434  wck:0.40  ngds:81
+    run23  dpts:12..22  effs:37008  fails:874  wrgs:1598  wck:0.44  ngds:86
+    run24  dpts:11..22  effs:41866  fails:972  wrgs:1787  wck:0.47  ngds:91
+    run25  dpts:12..24  effs:46048  fails:1080  wrgs:1997  wck:0.52  ngds:97
+    run26  dpts:11..20  effs:51396  fails:1199  wrgs:2216  wck:0.56  ngds:105
+    run27  dpts:12..26  effs:55841  fails:1330  wrgs:2461  wck:0.61  ngds:111
+    run28  dpts:11..24  effs:61515  fails:1474  wrgs:2742  wck:0.66  ngds:115
+    ...resetting weights (nValues: 264)
+    run29  dpts:17..26  effs:69131  fails:1632  wrgs:3000  wck:0.71  ngds:127
+    run30  dpts:19..35  effs:76451  fails:1806  wrgs:3314  wck:0.77  ngds:133
+    run31  dpts:12..22  effs:85707  fails:1997  wrgs:3692  wck:0.83  ngds:139
+    run32  dpts:11..24  effs:93867  fails:2208  wrgs:4085  wck:0.92  ngds:144
+    run33  dpts:11..22  effs:105213  fails:2440  wrgs:4491  wck:1.00  ngds:151
+    run34  dpts:15..29  effs:115382  fails:2695  wrgs:4964  wck:1.09  ngds:157
+    run35  dpts:11..27  effs:127175  fails:2976  wrgs:5493  wck:1.17  ngds:161
+    run36  dpts:21..31  effs:135699  fails:3285  wrgs:6032  wck:1.27  ngds:165
+    run37  dpts:11..24  effs:152149  fails:3625  wrgs:6664  wck:1.34  ngds:169
+    run38  dpts:10..25  effs:168478  fails:3999  wrgs:7396  wck:1.51  ngds:173
+    run39  dpts:11..21  effs:189103  fails:4410  wrgs:8148  wck:1.66  ngds:180
+    run40  dpts:11..25  effs:206525  fails:4862  wrgs:9002  wck:1.84  ngds:184
+    run41  dpts:9..26  effs:230120  fails:5359  wrgs:9927  wck:2.00  ngds:188
+    run42  dpts:10..23  effs:256229  fails:5906  wrgs:10945  wck:2.21  ngds:200
+    run43  dpts:10..24  effs:283515  fails:6508  wrgs:12057  wck:2.44  ngds:204
+    run44  dpts:10..23  effs:316606  fails:7170  wrgs:13327  wck:2.68  ngds:213
+    run45  dpts:10..23  effs:350003  fails:7898  wrgs:14703  wck:2.97  ngds:223
+    run46  dpts:10..24  effs:381265  fails:8699  wrgs:16214  wck:3.29  ngds:228
+    run47  dpts:9..25  effs:426092  fails:9580  wrgs:17756  wck:3.58  ngds:235
+    run48  dpts:13..24  effs:465319  fails:10550  wrgs:19549  wck:3.96  ngds:242
+    run49  dpts:12..26  effs:507100  fails:11617  wrgs:21578  wck:4.29  ngds:244
+    run50  dpts:10..25  effs:553814  fails:12790  wrgs:23747  wck:4.64  ngds:253
+    run51  dpts:9..22  effs:619490  fails:14081  wrgs:25962  wck:5.08  ngds:264
+    run52  dpts:12..26  effs:677026  fails:15501  wrgs:28515  wck:5.62  ngds:272
+    run53  dpts:12..25  effs:734471  fails:17063  wrgs:31478  wck:6.09  ngds:279
+    run54  dpts:9..25  effs:819990  fails:18781  wrgs:34618  wck:6.58  ngds:287
+    run55  dpts:21..33  effs:869988  fails:20671  wrgs:38134  wck:7.37  ngds:297
+    run56  dpts:9..24  effs:970151  fails:22750  wrgs:41798  wck:7.72  ngds:302
+    run57  dpts:9..25  effs:1075388  fails:25037  wrgs:46009  wck:8.58  ngds:310
+    run58  dpts:8..23  effs:1189490  fails:27553  wrgs:50710  wck:9.54  ngds:316
+    ...resetting weights (nValues: 264)
+    run59  dpts:11..25  effs:1337363  fails:30321  wrgs:55392  wck:10.7  ngds:328
+    run60  dpts:11..28  effs:1478345  fails:33365  wrgs:61092  wck:11.9  ngds:333
+    run61  dpts:10..27  effs:1640898  fails:36714  wrgs:67402  wck:13.0  ngds:336
+    run62  dpts:9..27  effs:1840534  fails:40398  wrgs:74132  wck:14.6  ngds:344
+    run63  dpts:11..28  effs:2005503  fails:44450  wrgs:81636  wck:16.4  ngds:352
+    run64  dpts:10..30  effs:2178929  fails:48907  wrgs:90016  wck:17.9  ngds:360
+    run65  dpts:10..27  effs:2435687  fails:53810  wrgs:98413  wck:19.5  ngds:365
+    run66  dpts:8..26  effs:2703160  fails:59204  wrgs:108303  wck:21.6  ngds:376
+    run67  dpts:8..26  effs:3010065  fails:65137  wrgs:119184  wck:24.2  ngds:388
+    run68  dpts:9..31  effs:3337003  fails:71663  wrgs:130818  wck:27.0  ngds:404
+    run69  dpts:11..28  effs:3605707  fails:78842  wrgs:144423  wck:29.9  ngds:412
+    run70  dpts:9..29  effs:3988655  fails:86739  wrgs:159240  wck:32.3  ngds:425
+    run71  dpts:9..27  effs:4439144  fails:95426  wrgs:175017  wck:35.7  ngds:436
+    run72  dpts:10..27  effs:4885148  fails:104981  wrgs:193096  wck:39.6  ngds:448
+    run73  dpts:9..26  effs:5382608  fails:115492  wrgs:212323  wck:43.5  ngds:455
+    run74  dpts:9..27  effs:5914004  fails:127054  wrgs:233876  wck:47.8  ngds:464
+    run75  dpts:6..30  effs:6392737  fails:139772  wrgs:258087  wck:52.3  ngds:475
+    run76  dpts:9..33  effs:7007585  fails:153762  wrgs:283250  wck:56.9  ngds:487
+    run77  dpts:8..32  effs:7745249  fails:169151  wrgs:311995  wck:62.2  ngds:493
+    run78  dpts:9..29  effs:8467457  fails:186079  wrgs:343680  wck:68.4  ngds:503
+    run79  dpts:8..26  effs:9419077  fails:204700  wrgs:377272  wck:74.5  ngds:516
+    run80  dpts:6..29  effs:10484744  fails:225184  wrgs:414952  wck:82.6  ngds:525
+    run81  dpts:8..27  effs:11673620  fails:247716  wrgs:456821  wck:91.7  ngds:534
+    run82  dpts:7..29  effs:12890150  fails:272501  wrgs:503272  wck:101.6  ngds:545
+    run83  dpts:7..26  effs:14249706  fails:299765  wrgs:553436  wck:111.8  ngds:551
+    run84  dpts:9..32  effs:15416708  fails:329755  wrgs:609886  wck:123.2  ngds:560
+    run85  dpts:7..31  effs:17078677  fails:362744  wrgs:669950  wck:133.0  ngds:577
+    run86  dpts:6..31  effs:18830283  fails:399032  wrgs:737546  wck:146.7  ngds:588
+    run87  dpts:7..34  effs:20639818  fails:438949  wrgs:813049  wck:161.5  ngds:602
+    run88  dpts:6..33  effs:22754050  fails:482858  wrgs:891926  wck:177.1  ngds:615
+    ...resetting restart cutoff to 20
+    ...resetting weights (nValues: 264)
+    run89  dpts:15..22  effs:22754810  fails:482878  wrgs:891952  wck:194.0  ngds:618
+    run90  dpts:18..24  effs:22755589  fails:482900  wrgs:891988  wck:194.0  ngds:623
+    run91  dpts:18..26  effs:22756417  fails:482924  wrgs:892039  wck:194.0  ngds:626
+    run92  dpts:11..22  effs:22757464  fails:482950  wrgs:892087  wck:194.0  ngds:628
+    run93  dpts:16..21  effs:22758710  fails:482979  wrgs:892144  wck:194.0  ngds:633
+    run94  dpts:14..22  effs:22759780  fails:483011  wrgs:892206  wck:194.0  ngds:636
+    run95  dpts:12..21  effs:22761469  fails:483046  wrgs:892281  wck:194.1  ngds:639
+    run96  dpts:11..20  effs:22763810  fails:483084  wrgs:892353  wck:194.1  ngds:644
+    run97  dpts:14..21  effs:22765875  fails:483126  wrgs:892417  wck:194.1  ngds:647
+    run98  dpts:15..25  effs:22767908  fails:483173  wrgs:892508  wck:194.1  ngds:653
+    run99  dpts:17..28  effs:22769319  fails:483224  wrgs:892602  wck:194.1  ngds:655
+    run100  dpts:12..24  effs:22771568  fails:483281  wrgs:892711  wck:194.1  ngds:657
+    run101  dpts:15..24  effs:22773913  fails:483343  wrgs:892823  wck:194.2  ngds:662
+    run102  dpts:12..21  effs:22777710  fails:483412  wrgs:892970  wck:194.2  ngds:663
+    run103  dpts:13..24  effs:22780823  fails:483487  wrgs:893117  wck:194.2  ngds:669
+    run104  dpts:12..21  effs:22783687  fails:483570  wrgs:893275  wck:194.2  ngds:673
+    run105  dpts:11..25  effs:22788383  fails:483661  wrgs:893440  wck:194.3  ngds:676
+    run106  dpts:15..33  effs:22793143  fails:483762  wrgs:893643  wck:194.3  ngds:685
+    run107  dpts:11..26  effs:22797939  fails:483873  wrgs:893841  wck:194.3  ngds:689
+    run108  dpts:11..20  effs:22803042  fails:483995  wrgs:894061  wck:194.4  ngds:695
+    run109  dpts:9..20  effs:22809780  fails:484129  wrgs:894294  wck:194.4  ngds:702
+    run110  dpts:12..24  effs:22814470  fails:484277  wrgs:894556  wck:194.5  ngds:709
+    run111  dpts:11..22  effs:22821695  fails:484439  wrgs:894848  wck:194.5  ngds:717
+    run112  dpts:10..24  effs:22831310  fails:484618  wrgs:895183  wck:194.6  ngds:724
+    run113  dpts:11..21  effs:22839624  fails:484814  wrgs:895534  wck:194.7  ngds:729
+    run114  dpts:9..21  effs:22847341  fails:485030  wrgs:895922  wck:194.8  ngds:734
+    run115  dpts:13..24  effs:22858733  fails:485268  wrgs:896370  wck:194.9  ngds:739
+    run116  dpts:11..20  effs:22866408  fails:485530  wrgs:896850  wck:195.0  ngds:745
+    run117  dpts:10..21  effs:22881194  fails:485818  wrgs:897374  wck:195.0  ngds:753
+    run118  dpts:10..23  effs:22894295  fails:486135  wrgs:897972  wck:195.2  ngds:757
+    ...resetting weights (nValues: 264)
+    run119  dpts:15..26  effs:22911801  fails:486483  wrgs:898511  wck:195.3  ngds:766
+    run120  dpts:18..30  effs:22926239  fails:486866  wrgs:899248  wck:195.4  ngds:773
+    run121  dpts:11..23  effs:22947260  fails:487288  wrgs:900044  wck:195.5  ngds:778
+    run122  dpts:11..24  effs:22970030  fails:487752  wrgs:900885  wck:195.7  ngds:786
+    run123  dpts:10..22  effs:22996957  fails:488262  wrgs:901820  wck:195.9  ngds:793
+    run124  dpts:10..27  effs:23026123  fails:488824  wrgs:902843  wck:196.1  ngds:801
+    run125  dpts:9..23  effs:23059619  fails:489442  wrgs:904002  wck:196.4  ngds:807
+    run126  dpts:11..26  effs:23091013  fails:490122  wrgs:905271  wck:196.7  ngds:811
+    run127  dpts:9..23  effs:23130069  fails:490870  wrgs:906722  wck:196.9  ngds:816
+    run128  dpts:9..28  effs:23157187  fails:491692  wrgs:908287  wck:197.3  ngds:823
+    run129  dpts:9..23  effs:23205909  fails:492597  wrgs:909992  wck:197.5  ngds:830
+    run130  dpts:12..24  effs:23252271  fails:493592  wrgs:911819  wck:197.9  ngds:834
+    run131  dpts:8..24  effs:23311698  fails:494687  wrgs:913847  wck:198.3  ngds:839
+    run132  dpts:10..24  effs:23370556  fails:495891  wrgs:916023  wck:198.9  ngds:846
+    run133  dpts:10..25  effs:23445128  fails:497216  wrgs:918544  wck:199.4  ngds:856
+    run134  dpts:10..25  effs:23514461  fails:498673  wrgs:921248  wck:200.0  ngds:863
+    run135  dpts:11..27  effs:23578831  fails:500276  wrgs:924189  wck:200.7  ngds:868
+    run136  dpts:11..26  effs:23649309  fails:502039  wrgs:927537  wck:201.2  ngds:874
+    run137  dpts:9..24  effs:23747694  fails:503979  wrgs:931127  wck:201.7  ngds:881
+    run138  dpts:9..25  effs:23859157  fails:506113  wrgs:935092  wck:202.6  ngds:888
+    run139  dpts:8..27  effs:23984966  fails:508460  wrgs:939341  wck:203.6  ngds:896
+    run140  dpts:10..30  effs:24103394  fails:511042  wrgs:944200  wck:204.6  ngds:902
+    run141  dpts:10..29  effs:24219104  fails:513882  wrgs:949640  wck:205.6  ngds:910
+    run142  dpts:12..27  effs:24362270  fails:517006  wrgs:955394  wck:206.7  ngds:922
+    run143  dpts:7..24  effs:24540422  fails:520443  wrgs:961836  wck:207.8  ngds:929
+    run144  dpts:11..28  effs:24692405  fails:524224  wrgs:968893  wck:209.4  ngds:934
+    run145  dpts:9..26  effs:24905632  fails:528383  wrgs:976377  wck:210.6  ngds:941
+    run146  dpts:9..28  effs:25102309  fails:532958  wrgs:984962  wck:212.4  ngds:951
+    run147  dpts:8..35  effs:25338290  fails:537990  wrgs:993945  wck:214.0  ngds:963
+    run148  dpts:8..27  effs:25600164  fails:543526  wrgs:1004000  wck:216.0  ngds:972
+    ...resetting weights (nValues: 264)
+    run149  dpts:11..27  effs:25930600  fails:549615  wrgs:1014436  wck:218.1  ngds:978
+    run150  dpts:9..27  effs:26171064  fails:556313  wrgs:1027075  wck:220.5  ngds:987
+    run151  dpts:10..32  effs:26568820  fails:563681  wrgs:1040625  wck:222.6  ngds:998
+    run152  dpts:9..27  effs:27032356  fails:571786  wrgs:1055996  wck:225.6  ngds:1004
+    run153  dpts:9..27  effs:27484687  fails:580701  wrgs:1072614  wck:229.3  ngds:1012
+    run154  dpts:7..30  effs:27992065  fails:590508  wrgs:1090247  wck:233.2  ngds:1020
+    run155  dpts:8..30  effs:28560093  fails:601296  wrgs:1110442  wck:237.5  ngds:1026
+    run156  dpts:7..33  effs:29201006  fails:613162  wrgs:1132071  wck:242.3  ngds:1035
+    run157  dpts:7..27  effs:29837974  fails:626215  wrgs:1155637  wck:247.6  ngds:1042
+    run158  dpts:8..26  effs:30510044  fails:640574  wrgs:1182696  wck:252.9  ngds:1049
+    run159  dpts:9..28  effs:31184996  fails:656368  wrgs:1212725  wck:258.4  ngds:1060
+    run160  dpts:7..27  effs:32040904  fails:673742  wrgs:1243617  wck:264.1  ngds:1070
+    run161  dpts:8..33  effs:32964548  fails:692853  wrgs:1278638  wck:271.2  ngds:1080
+    run162  dpts:8..28  effs:33980625  fails:713876  wrgs:1317966  wck:278.3  ngds:1092
+    run163  dpts:7..32  effs:35156057  fails:737001  wrgs:1359125  wck:286.7  ngds:1109
+    run164  dpts:7..30  effs:36349747  fails:762438  wrgs:1407054  wck:296.2  ngds:1119
+    run165  dpts:7..29  effs:37786851  fails:790419  wrgs:1458881  wck:306.5  ngds:1127
+    run166  dpts:7..30  effs:39340636  fails:821198  wrgs:1514591  wck:318.4  ngds:1139
+    run167  dpts:7..31  effs:40835925  fails:855055  wrgs:1579298  wck:330.6  ngds:1145
+    run168  dpts:7..39  effs:42508330  fails:892298  wrgs:1643374  wck:342.5  ngds:1154
+    run169  dpts:6..29  effs:44506470  fails:933266  wrgs:1719026  wck:354.7  ngds:1164
+    run170  dpts:15..37  effs:45805343  fails:978330  wrgs:1805300  wck:370.8  ngds:1169
+    run171  dpts:7..32  effs:48175656  fails:1027901  wrgs:1893326  wck:379.8  ngds:1184
+    run172  dpts:7..29  effs:50860263  fails:1082429  wrgs:1995717  wck:398.3  ngds:1197
+    run173  dpts:7..32  effs:53602711  fails:1142410  wrgs:2108673  wck:420.0  ngds:1207
+    run174  dpts:8..38  effs:56585772  fails:1208389  wrgs:2232336  wck:443.5  ngds:1222
+    run175  dpts:6..29  effs:60247470  fails:1280966  wrgs:2364712  wck:464.8  ngds:1228
+    run176  dpts:6..30  effs:64163766  fails:1360801  wrgs:2512738  wck:494.4  ngds:1233
+    run177  dpts:6..34  effs:68213434  fails:1448619  wrgs:2677877  wck:527.2  ngds:1248
+    run178  dpts:7..34  effs:73020054  fails:1545219  wrgs:2856251  wck:560.3  ngds:1261
+    ...resetting restart cutoff to 40
+    ...resetting weights (nValues: 264)
+    run179  dpts:17..22  effs:73022131  fails:1545259  wrgs:2856313  wck:599.0  ngds:1268
+    run180  dpts:18..25  effs:73024115  fails:1545303  wrgs:2856399  wck:599.0  ngds:1274
+    run181  dpts:15..26  effs:73026311  fails:1545351  wrgs:2856493  wck:599.1  ngds:1278
+    run182  dpts:14..24  effs:73028224  fails:1545404  wrgs:2856589  wck:599.1  ngds:1280
+    run183  dpts:12..22  effs:73030239  fails:1545462  wrgs:2856687  wck:599.1  ngds:1284
+    run184  dpts:13..24  effs:73032727  fails:1545526  wrgs:2856814  wck:599.1  ngds:1289
+    run185  dpts:16..25  effs:73035344  fails:1545596  wrgs:2856941  wck:599.2  ngds:1294
+    run186  dpts:13..24  effs:73038573  fails:1545673  wrgs:2857095  wck:599.2  ngds:1296
+    run187  dpts:15..24  effs:73042494  fails:1545758  wrgs:2857258  wck:599.2  ngds:1299
+    run188  dpts:18..26  effs:73045736  fails:1545852  wrgs:2857423  wck:599.2  ngds:1305
+    run189  dpts:10..19  effs:73051188  fails:1545955  wrgs:2857615  wck:599.3  ngds:1311
+    run190  dpts:10..22  effs:73055479  fails:1546069  wrgs:2857833  wck:599.3  ngds:1315
+    run191  dpts:11..21  effs:73061057  fails:1546194  wrgs:2858048  wck:599.4  ngds:1320
+    run192  dpts:14..26  effs:73066688  fails:1546332  wrgs:2858311  wck:599.4  ngds:1326
+    run193  dpts:11..22  effs:73074093  fails:1546483  wrgs:2858583  wck:599.5  ngds:1329
+    run194  dpts:11..22  effs:73081585  fails:1546650  wrgs:2858903  wck:599.5  ngds:1333
+    run195  dpts:12..22  effs:73088737  fails:1546833  wrgs:2859249  wck:599.6  ngds:1341
+    run196  dpts:10..23  effs:73101236  fails:1547035  wrgs:2859633  wck:599.7  ngds:1350
+    run197  dpts:9..24  effs:73111999  fails:1547257  wrgs:2860036  wck:599.8  ngds:1355
+    run198  dpts:10..21  effs:73124752  fails:1547501  wrgs:2860475  wck:599.9  ngds:1362
+    run199  dpts:11..27  effs:73136635  fails:1547770  wrgs:2860978  wck:600.0  ngds:1368
+    run200  dpts:10..24  effs:73148088  fails:1548066  wrgs:2861522  wck:600.1  ngds:1373
+    run201  dpts:13..24  effs:73161327  fails:1548391  wrgs:2862120  wck:600.2  ngds:1379
+    run202  dpts:12..25  effs:73177733  fails:1548749  wrgs:2862813  wck:600.3  ngds:1386
+    run203  dpts:9..21  effs:73200200  fails:1549142  wrgs:2863536  wck:600.5  ngds:1392
+    run204  dpts:9..22  effs:73219528  fails:1549575  wrgs:2864343  wck:600.7  ngds:1397
+    run205  dpts:11..25  effs:73238902  fails:1550051  wrgs:2865256  wck:600.8  ngds:1403
+    run206  dpts:10..23  effs:73264891  fails:1550575  wrgs:2866219  wck:601.0  ngds:1411
+    run207  dpts:12..26  effs:73288564  fails:1551151  wrgs:2867326  wck:601.3  ngds:1416
+    run208  dpts:10..25  effs:73318813  fails:1551785  wrgs:2868477  wck:601.5  ngds:1424
+    ...resetting weights (nValues: 264)
+
+[91ms UNKNOWN[0m
+[92m
+d WRONG DECISIONS[0m 2869104
+[92md FOUND SOLUTIONS[0m 0
+[91md INCOMPLETE EXPLORATION[0m

@@ -73,11 +73,11 @@ def show_solution(solutionFileName, k):
                 boites[boite].append(balle)
 
         for i in range(1, k + 1):
-            print("Boîte {}: {}".format(i, boites[i]))
+            print(boites[i])
 
     else:
         print("La formule n'est pas satisfaisable.")
 
 
-genererFichierClauses(3, 100, "3_100.cnf")
-#show_solution("solutions/4_66.out", 4)
+#genererFichierClauses(3, 100, "3_100.cnf")
+show_solution("solutions/3_4.out", 3)

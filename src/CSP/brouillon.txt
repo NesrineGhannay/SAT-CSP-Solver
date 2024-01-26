@@ -1,14 +1,15 @@
 from pycsp3 import *
 def generate_schur_csp_instance(k, n):
-    b = VarArray(size=n, dom=range(1, k + 1))
+    b = VarArray(size=n+1, dom=range(1, k + 1))
 
     satisfy(
         ((b[i] != b[j]) | (b[i] != b[l]) | (b[j] != b[l]))
-        for i in range(n) for j in range(n) for l in range(n)
+        for i in range(1, n+1) for j in range(i+1, n+1) for l in range(1, n+1)
         if (i + j == l)
     )
 
     if solve() is SAT:
+    #if solve(solver=CHOCO) is SAT:
         return values(b)
     else:
         print("l'instance n'a pas de solution")
@@ -26,8 +27,8 @@ def show_solution(solution):
         resultat += '\n'
     print(resultat)
 
-valeurs = generate_schur_csp_instance(3, 20)
-valeurs = generate_schur_csp_instance(3, 20)
+valeurs = generate_schur_csp_instance(3, 4)
+#valeurs = generate_schur_csp_instance(3, 20)
 #valeurs = generate_schur_csp_instance(3, 23)
 #valeurs = generate_schur_csp_instance(3, 24)
 #valeurs = generate_schur_csp_instance(3, 43)

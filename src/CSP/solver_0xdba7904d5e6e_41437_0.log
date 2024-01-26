@@ -1,0 +1,95 @@
+
+[93mACE v2.1 [0m
+
+  [94minstance[0m
+    name:schur_problem_csp
+
+  Loading variables...
+
+  Loading constraints...
+
+  [94mdomains[0m
+    types:1  values:750  sizes:[5:150]
+  [94mvariables[0m
+    count:150  arrays:1  degrees:[74:1,75:2,76:2,77:2...145:2,146:2,147:2,148:1]
+  [94mconstraints[0m
+    count:5550  groups:1  arities:[3:5550]
+    distribution:[ConstraintIntension:5550]
+    intStructures:(1,shared:5549)
+    wck:2.32  cpu:1.965  mem:54M381
+
+  Building solver... 
+
+  [94msolver[0m
+    guaranteedAC:true
+    wck:2.40  cpu:2.006  mem:61M721
+
+  [94mpreprocessing[0m
+    revisions:(16650,useless=16650)  values:750  unsat:false
+    wck:0.063  cpu:2.042  mem:61M917
+
+    run0  dpts:56..61  effs:967  fails:10  wrgs:18  wck:0.00  ngds:2
+    run1  dpts:52..55  effs:1961  fails:21  wrgs:32  wck:0.17  ngds:4
+    run2  dpts:45..49  effs:2536  fails:33  wrgs:51  wck:0.27  ngds:7
+    run3  dpts:47..57  effs:3297  fails:46  wrgs:76  wck:0.32  ngds:9
+    run4  dpts:45..54  effs:4049  fails:60  wrgs:103  wck:0.40  ngds:12
+    run5  dpts:49..55  effs:5333  fails:76  wrgs:133  wck:0.47  ngds:16
+    run6  dpts:45..52  effs:6878  fails:93  wrgs:165  wck:0.54  ngds:19
+    run7  dpts:48..54  effs:7821  fails:112  wrgs:196  wck:0.63  ngds:25
+    run8  dpts:41..51  effs:9116  fails:133  wrgs:238  wck:0.72  ngds:28
+    run9  dpts:42..47  effs:10921  fails:156  wrgs:277  wck:0.79  ngds:33
+    run10  dpts:37..48  effs:12553  fails:181  wrgs:325  wck:0.88  ngds:34
+    run11  dpts:37..45  effs:15139  fails:209  wrgs:379  wck:0.95  ngds:40
+    run12  dpts:41..49  effs:16957  fails:240  wrgs:437  wck:1.04  ngds:45
+    run13  dpts:40..51  effs:19342  fails:274  wrgs:500  wck:1.12  ngds:49
+    run14  dpts:31..41  effs:21629  fails:311  wrgs:569  wck:1.21  ngds:51
+    run15  dpts:30..38  effs:23510  fails:352  wrgs:643  wck:1.31  ngds:60
+    run16  dpts:33..43  effs:25546  fails:397  wrgs:732  wck:1.40  ngds:62
+    run17  dpts:38..48  effs:28538  fails:447  wrgs:826  wck:1.49  ngds:65
+    run18  dpts:34..45  effs:31442  fails:502  wrgs:921  wck:1.60  ngds:67
+    run19  dpts:37..45  effs:34802  fails:563  wrgs:1023  wck:1.70  ngds:73
+    run20  dpts:37..47  effs:38454  fails:630  wrgs:1164  wck:1.81  ngds:78
+    run21  dpts:29..44  effs:42047  fails:704  wrgs:1300  wck:1.94  ngds:80
+    run22  dpts:33..41  effs:49808  fails:785  wrgs:1447  wck:2.10  ngds:88
+    run23  dpts:33..47  effs:59113  fails:874  wrgs:1613  wck:2.31  ngds:94
+    run24  dpts:31..41  effs:64538  fails:972  wrgs:1784  wck:2.54  ngds:96
+    run25  dpts:30..45  effs:70916  fails:1080  wrgs:1996  wck:2.72  ngds:100
+    run26  dpts:32..42  effs:79152  fails:1199  wrgs:2209  wck:2.94  ngds:105
+    run27  dpts:30..42  effs:85450  fails:1330  wrgs:2468  wck:3.21  ngds:111
+    run28  dpts:31..45  effs:93532  fails:1474  wrgs:2721  wck:3.47  ngds:121
+    ...resetting weights (nValues: 750)
+    run29  dpts:50..57  effs:108187  fails:1632  wrgs:2982  wck:3.72  ngds:133
+    run30  dpts:58..82  effs:115345  fails:1806  wrgs:3321  wck:3.98  ngds:137
+    run31  dpts:39..54  effs:127392  fails:1997  wrgs:3683  wck:4.19  ngds:141
+    run32  dpts:40..53  effs:140120  fails:2208  wrgs:4091  wck:4.50  ngds:146
+    run33  dpts:37..53  effs:153890  fails:2440  wrgs:4534  wck:4.83  ngds:151
+    run34  dpts:36..51  effs:169657  fails:2695  wrgs:4989  wck:5.21  ngds:157
+    run35  dpts:36..50  effs:187150  fails:2976  wrgs:5491  wck:5.72  ngds:164
+    run36  dpts:31..49  effs:207255  fails:3285  wrgs:6068  wck:6.17  ngds:170
+    run37  dpts:28..43  effs:234806  fails:3625  wrgs:6744  wck:6.76  ngds:173
+    run38  dpts:30..52  effs:260533  fails:3999  wrgs:7463  wck:7.55  ngds:177
+    run39  dpts:29..43  effs:282346  fails:4410  wrgs:8253  wck:8.29  ngds:180
+    run40  dpts:26..44  effs:314432  fails:4862  wrgs:9048  wck:9.03  ngds:190
+    run41  dpts:27..52  effs:350924  fails:5359  wrgs:10002  wck:9.95  ngds:196
+    run42  dpts:28..43  effs:388128  fails:5906  wrgs:11042  wck:11.2  ngds:202
+    run43  dpts:28..46  effs:421329  fails:6508  wrgs:12180  wck:12.3  ngds:207
+    run44  dpts:26..45  effs:480261  fails:7170  wrgs:13436  wck:13.3  ngds:216
+    run45  dpts:25..47  effs:532684  fails:7898  wrgs:14770  wck:14.9  ngds:223
+    run46  dpts:28..43  effs:587645  fails:8699  wrgs:16300  wck:16.5  ngds:235
+    run47  dpts:28..47  effs:662108  fails:9580  wrgs:17996  wck:18.0  ngds:242
+    run48  dpts:32..49  effs:716303  fails:10550  wrgs:19851  wck:19.9  ngds:246
+    run49  dpts:32..48  effs:782467  fails:11617  wrgs:21842  wck:21.5  ngds:256
+    run50  dpts:28..46  effs:895230  fails:12790  wrgs:24003  wck:23.4  ngds:266
+    run51  dpts:28..48  effs:1008244  fails:14081  wrgs:26369  wck:26.4  ngds:274
+    run52  dpts:30..51  effs:1137785  fails:15501  wrgs:29080  wck:29.5  ngds:280
+    run53  dpts:30..52  effs:1242184  fails:17063  wrgs:31981  wck:32.8  ngds:288
+    run54  dpts:33..52  effs:1371465  fails:18781  wrgs:35282  wck:35.5  ngds:297
+    run55  dpts:27..44  effs:1497425  fails:20671  wrgs:38987  wck:38.8  ngds:306
+    run56  dpts:26..45  effs:1630398  fails:22750  wrgs:42984  wck:42.4  ngds:314
+    run57  dpts:27..47  effs:1817052  fails:25037  wrgs:47305  wck:46.1  ngds:318
+
+[91ms UNKNOWN[0m
+[92m
+d WRONG DECISIONS[0m 48563
+[92md FOUND SOLUTIONS[0m 0
+[91md INCOMPLETE EXPLORATION[0m
