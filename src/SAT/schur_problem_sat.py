@@ -1,28 +1,27 @@
-from collections import defaultdict
-import os
+def generate_schur_sat_instance(k, n):
+    """
+    Génère une instance de problème Schur SAT sous forme de clauses.
 
-
-def generate_schur_csp_instance(k, n):
+    :param k: Nombre de boîtes
+    :param n: Nombre de balles
+    :return: Clauses au format CNF
+    """
     clauses = ""
 
-    # si on a trois balles x, y, z telles que x + y = z, alors les trois balles ne doivent pas toutes être dans la
-    # même boîte
     for i in range(1, n + 1):
         for j in range(i + 1, n + 1):
             for l in range(j + 1, n + 1):
-                if (i + j == l):
+                if i + j == l:
                     for m in range(1, k + 1):
                         clauses += str(formeInjective(-i, -m, k)) + " " + str(formeInjective(-j, -m, k)) + " " + str(
                             formeInjective(-l, -m, k)) + " 0\n"
 
-    # Chaque balle est sur au moins dans une case
     for i in range(1, n + 1):
         clause = ""
         for j in range(1, k + 1):
             clause += str(formeInjective(i, j, k)) + " "
         clauses += clause + "0\n"
 
-    # Chaque balle est sur au plus dans une case
     for i in range(1, n + 1):
         for j in range(1, k + 1):
             for l in range(j + 1, k + 1):
@@ -31,6 +30,14 @@ def generate_schur_csp_instance(k, n):
 
 
 def formeInjective(i, j, nbBoxes):
+    """
+    Fonction pour convertir la paire (i, j) en un littéral unique pour le problème SAT.
+
+    :param i: Indice de la balle
+    :param j: Indice de la boîte
+    :param nbBoxes: Nombre total de boîtes
+    :return: Littéral unique
+    """
     if i < 0:
         i = abs(i)
         j = abs(j)
@@ -40,6 +47,13 @@ def formeInjective(i, j, nbBoxes):
 
 
 def formeInjective_inverse(x, nbBoxes):
+    """
+    Fonction inverse de formeInjective, convertit le littéral x en la paire (i, j).
+
+    :param x: Littéral
+    :param nbBoxes: Nombre total de boîtes
+    :return: Paire (i, j)
+    """
     if x < 0:
         x = abs(x)
         i = ((x - 1) // nbBoxes) + 1
@@ -52,7 +66,14 @@ def formeInjective_inverse(x, nbBoxes):
 
 
 def genererFichierClauses(k, n, fileName):
-    clauses = generate_schur_csp_instance(k, n)
+    """
+    Génère un fichier CNF contenant les clauses d'une instance du problème Schur SAT.
+
+    :param k: Nombre de boîtes
+    :param n: Nombre de balles
+    :param fileName: Nom du fichier de sortie
+    """
+    clauses = generate_schur_sat_instance(k, n)
     nombreLitteraux = n * k
     fichier = open(fileName, "w")
     fichier.write("p cnf " + str(nombreLitteraux) + " " + str(len(clauses.splitlines())) + "\n")
@@ -61,6 +82,12 @@ def genererFichierClauses(k, n, fileName):
 
 
 def show_solution(solutionFileName, k):
+    """
+    Affiche la solution du problème Schur SAT à partir du fichier retourné par MiniSat.
+
+    :param solutionFileName: Nom du fichier de solution
+    :param k: Nombre de boîtes
+    """
     with open(solutionFileName, 'r') as f:
         lines = f.readlines()
     if lines[0].strip() == "SAT":
@@ -71,13 +98,16 @@ def show_solution(solutionFileName, k):
         for balle, boite in litteraux:
             if boite > 0:
                 boites[boite].append(balle)
-
+        show = ""
         for i in range(1, k + 1):
-            print(boites[i])
+            for boite in boites[i]:
+                show += str(boite) + " "
+            show += '\n'
+        print(show)
 
     else:
         print("La formule n'est pas satisfaisable.")
 
-
-#genererFichierClauses(3, 100, "3_100.cnf")
-show_solution("solutions/3_4.out", 3)
+# Exemple d'utilisation :
+# genererFichierClauses(3, 20, "instances/3_20.cnf")
+# show_solution("solutions/3_20.out", 3)
