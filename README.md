@@ -37,7 +37,7 @@ Le dossier CSP contient le code source lié à l'approche CSP.
    - Le contenu de chaque boîte sera affiché dans la console.
 
 2. **Approche CSP :**
-   - Exécutez le fichier [schur_problem_csp.py](src/CSP/schur_problem_csp.py) pour modéliser et résoudre le problème de Schur en utilisant les contraintes. Il faudra renseigner les bonnes valeurs pour le nombre de boites et de balles
+   - Exécutez le fichier [schur_problem_csp.py](src/CSP/schur_problem_csp.py) pour modéliser et résoudre le problème de Schur en utilisant les contraintes. Il faudra renseigner les bonnes valeurs pour le nombre de boites et de balles. Enfin, n'oubliez pas de préciser le solveur que vous voulez utiliser dans les paramètres de la fonction **solve()** appelée (ACE par défaut, ou CHOCO si renseigné)
    - Les résultats seront affichés dans la console.
 
 
